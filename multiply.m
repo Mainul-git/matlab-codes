@@ -1,0 +1,12 @@
+clc;
+clear;
+close all;
+x=1:7;
+y=[0.5 2.5 2 4 3.5 6 5.5];
+n=numel(y);
+xbar=mean(x);
+ybar=mean(y);
+m=(n*(sum(x.*y))-sum(x)*sum(y))/(n*sum(x.*x)-(sum(x)^2));
+c=ybar-m*xbar;
+disp(m);
+disp(c);
